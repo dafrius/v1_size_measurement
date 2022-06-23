@@ -35,7 +35,7 @@
 
 ### Retinotopy
 
-- 3 Runs:
+    3 Runs:
     Contrast reversing checkerboards 4 Hz (standard V1 driving speed).
     12 second baseline at the beginning & end of each run
     Spider-web like fixation point.
@@ -52,13 +52,14 @@
     3) Bars (again)
 
 
-    # Size of the wedge, width, etc..
+    Size of the wedge, width, etc..
 *Pull the code from lab-github into this folder.
 
 ## PRF Model Fitting
     1) De-trending for fixing the slow-drift
 
 In the repository called matlab/fmri library
+
 *Pull the code from lab-github into this folder.
 
 Output is the volume map
