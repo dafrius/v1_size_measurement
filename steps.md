@@ -1,4 +1,5 @@
 [fMRIPrep home](https://fmriprep.org/en/stable/)
+
 [fMRIPrep nature methods paper](https://www.nature.com/articles/s41592-018-0235-4)
 
 ## Stimuli
@@ -24,6 +25,7 @@ We keep things in the native space, no warping.
 and we want to think of the whole volume as a single point in time)
 
 [BrainVoyager SliceTime explanation](https://www.brainvoyager.com/bv/doc/UsersGuide/Preprocessing/SliceScanTimeCorrection.html)
+
 [Slow-drift explanation](https://www.brainvoyager.com/bv/doc/UsersGuide/Preprocessing/TemporalHighPassFiltering.html)
 
 ### Combination of Anatomical & Functional
