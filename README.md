@@ -1,5 +1,5 @@
 ## Stimuli
-### Localizer *
+### Localizer
 - Faces, hands, string instruments to localize FFA
 
 ## Data acquisition
@@ -70,9 +70,11 @@ Using the map, we draw the borders of V1
 ## Measurement, V1 Size
 
 ### Drawing an ROI
-1) We first load an inflated brain in Suma (anatomical)
+1) We first load an inflated brain in Suma (anatomical):
 
-    -suma -i_fs lh.inflated (or rh)
+```
+suma -i_fs lh.inflated (or rh)
+```
 
 2) In suma, we load a functional dataset onto the inflated brain.
 
@@ -122,11 +124,11 @@ We need a few AFNI commands for measurement.
 
 Main ones will be:
 
--ROI2dataset
+- ROI2dataset
 
--SurfInfo
+- SurfInfo
 
--SurfMeasures
+- SurfMeasures
 
 *These are bash commands that need to be run directly from terminal*
 
@@ -138,11 +140,11 @@ ROI2dataset command.
 We will need certain files that are output from the scans for this operation:
 
 ```
--sub-**_lh.spec (or rh)
+sub-**_lh.spec (or rh)
 
--lh.inflated.gii (or rh)
+lh.inflated.gii (or rh)
 
--sub-**_lh_v1.1D.roi (or rh)
+sub-**_lh_v1.1D.roi (or rh)
 ```
 
 In order to do the conversion, we need to obtain the total number of nodes on
@@ -151,7 +153,7 @@ the full hemisphere surface
 We do so with this command:
 
 ```
--SurfInfo -N_Node -spec sub-**_lh.spec -surf_A lh.inflated.gii
+SurfInfo -N_Node -spec sub-**_lh.spec -surf_A lh.inflated.gii
 ```
 
 This gives us an N_Node. We take N_Node minus 1 (N_node-1) and put it in this
@@ -187,7 +189,7 @@ and the output of the surface area is shown in the command line when you run
 this command
 
 This operation can also be looped through all your participants for hassle-free
-processing. For that, see [this file.](https://github.com/dafrius/v1_size_measurement/blob/main/measure_loop.sh)
+processing. For that, see [this bash script.](https://github.com/dafrius/v1_size_measurement/blob/main/measure_loop.sh)
 
 The output file would include the left and right hemisphere V1 sizes for each
 subject, in mm^2.
