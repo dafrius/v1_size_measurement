@@ -74,23 +74,33 @@ Using the map, we draw the borders of V1
 ### Drawing an ROI
 1) We first load an inflated brain in Suma (anatomical)
     -suma -i_fs lh.inflated (or rh)
+
 2) In suma, we load a functional dataset onto the inflated brain.
     -ctrl+s -> load dataset
+
     e.g., analysis-eva/sub-*/pa_from_pRF_paecc_bars_bars_lh.gii
+
     or retmaps/pa_from_pRF_paecc_bars_bars_lh.gii
     
     Unselect "sym" (symmetrically modifying the threshold)
+    
     Change threshold to something sensible (between 20-160)
+
     Press * to smooth (e.g. 2)
 3) We start drawing after doing the above steps.
     -ctrl+d opens the drawing box
     shift+arrow moves the brain
 
     -select the pen
+
     -draw around the blob
+
     -click "Join"
+
     -Left mouse click on the blob
+
     -Change niml to 1D
+    
     Save ROI
 
 Now we have a V1 drawn using the functional data.
@@ -114,8 +124,11 @@ We first convert the ROI to a dataset that covers the whole brain surface with
 ROI2dataset command.
 
 We will need certain files that are output from the scans for this operation:
+
     -sub-**_lh.spec (or rh)
+    
     -lh.inflated.gii (or rh)
+
     -sub-**_lh_v1.1D.roi (or rh)
 
 In order to do the conversion, we need to obtain the total number of nodes on
