@@ -73,44 +73,51 @@ Using the map, we draw the borders of V1
 
 ### Drawing an ROI
 1) We first load an inflated brain in Suma (anatomical)
+
     -suma -i_fs lh.inflated (or rh)
 
 2) In suma, we load a functional dataset onto the inflated brain.
 
-    - ctrl+s -> load dataset
+    - Ctrl+S -> load dataset
 
-    e.g., analysis-eva/sub-*/pa_from_pRF_paecc_bars_bars_lh.gii
-
-    or retmaps/pa_from_pRF_paecc_bars_bars_lh.gii
+        - e.g., analysis-eva/sub-*/pa_from_pRF_paecc_bars_bars_lh.gii
+        - or retmaps/pa_from_pRF_paecc_bars_bars_lh.gii
     
-    Unselect "sym" (symmetrically modifying the threshold)
+    - Unselect "sym" (symmetrically modifying the threshold)
     
-    Change threshold to something sensible (between 20-160)
+    - Change threshold to something sensible (between 20-160)
 
-    Press * to smooth (e.g. 2)
+    - Press * to smooth (e.g. 2)
+
 3) We start drawing after doing the above steps.
-    -ctrl+d opens the drawing box
-    shift+arrow moves the brain
 
-    -select the pen
+    - Ctrl+D opens the drawing box
 
-    -draw around the blob
+        - shift+arrow moves the brain
 
-    -click "Join"
+    - Select the pen
 
-    -Left mouse click on the blob
+    - Draw around the blob
 
-    -Change niml to 1D
+    - Click "Join"
+
+    - Left mouse click on the blob
+
+    - Change niml to 1D
     
-    Save ROI
+    - Save ROI
 
 Now we have a V1 drawn using the functional data.
-File name: sub-**_lh_v1.1D.roi
-File name: sub-**_rh_v1.1D.roi
 
+File names look like this:
+
+    sub-**_lh_v1.1D.roi 
+
+    sub-**_rh_v1.1D.roi
 
 
 ### Measurement 
+
 We need a few AFNI commands for measurement.
 
 Main ones will be:
@@ -120,6 +127,8 @@ Main ones will be:
     -SurfInfo
 
     -SurfMeasures
+
+#### Conversion to dset
 
 We first convert the ROI to a dataset that covers the whole brain surface with
 ROI2dataset command.
@@ -147,11 +156,17 @@ N_Node-1 -input sub-**_lh_v1.1D.roi
 
 Now we have a converted dataset file which can be used by SurfMeasures command
 
+#### Getting the measurement
+
 SurfMeasures gives us the measurement.
 This command requires following files in the same folder:
+
     -sub-**_lh.spec (or rh.spec)
+
     -lh.smoothwm.gii (or rh.smoothwm.gii)
+
     -lh.aparc.a2009s.annot.niml.dset (or rh)
+
     -the converted dset file from the previous step (e.g., testroi.niml.dset)
 
 Finally, with these files, we can now run the following command:
