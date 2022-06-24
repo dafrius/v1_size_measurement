@@ -127,6 +127,8 @@ Main ones will be:
 
     -SurfMeasures
 
+    *These are bash commands that need to be run directly from terminal*
+
 #### Conversion to dset
 
 We first convert the ROI to a dataset that covers the whole brain surface with
@@ -181,7 +183,8 @@ this command
 This operation can also be looped through all your participants for hassle-free
 processing. For that, see [this file.](https://github.com/dafrius/v1_size_measurement/blob/main/measure_loop.sh)
 
-
+The output file would include the left and right hemisphere V1 sizes for each
+subject, in mm^2.
 
 
 
