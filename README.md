@@ -159,6 +159,7 @@ SurfInfo -N_Node -spec sub-**_lh.spec -surf_A lh.inflated.gii
 This gives us an N_Node. We take N_Node minus 1 (N_node-1) and put it in this
 command:
 
+
 ```
 ROI2dataset -prefix testroi(this name can be changed) -pad_to_node N_Node-1 -input sub-**_lh_v1.1D.roi
 ```
