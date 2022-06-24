@@ -103,8 +103,11 @@ File name: sub-**_rh_v1.1D.roi
 We need a few AFNI commands for measurement.
 
 Main ones will be:
+
     -ROI2dataset
+
     -SurfInfo
+
     -SurfMeasures
 
 We first convert the ROI to a dataset that covers the whole brain surface with
