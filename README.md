@@ -151,8 +151,7 @@ We do so with this command:
 This gives us an N_Node. We take N_Node minus 1 (N_node-1) and put it in this
 command:
 
-ROI2dataset -prefix testroi(this name can be changed) -pad_to_node
-N_Node-1 -input sub-**_lh_v1.1D.roi
+    -ROI2dataset -prefix testroi(this name can be changed) -pad_to_node N_Node-1 -input sub-**_lh_v1.1D.roi
 
 Now we have a converted dataset file which can be used by SurfMeasures command
 
@@ -171,9 +170,7 @@ This command requires following files in the same folder:
 
 Finally, with these files, we can now run the following command:
 
-SurfMeasures -info_area -func n_area_A sub-**_lh.spec -surf_A lh.smoothwm.gii
--cmask '-a testroi.niml.dset -expr step(a)' -out testsm.niml.dset | grep total
-| sed 's/-- total area 0 = /sub-**: lh: /' >> out_file.txt
+    -SurfMeasures -info_area -func n_area_A sub-**_lh.spec -surf_A lh.smoothwm.gii -cmask '-a testroi.niml.dset -expr step(a)' -out testsm.niml.dset | grep total | sed 's/-- total area 0 = /sub-**: lh: /' >> out_file.txt
 
 the name of the output file can be changed (-out filename.niml.dset)
 and the output of the surface area is shown in the command line when you run
