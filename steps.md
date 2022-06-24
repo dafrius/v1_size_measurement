@@ -76,7 +76,8 @@ Using the map, we draw the borders of V1
     -suma -i_fs lh.inflated (or rh)
 
 2) In suma, we load a functional dataset onto the inflated brain.
-    -ctrl+s -> load dataset
+
+    - ctrl+s -> load dataset
 
     e.g., analysis-eva/sub-*/pa_from_pRF_paecc_bars_bars_lh.gii
 
