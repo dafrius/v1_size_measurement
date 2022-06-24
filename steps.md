@@ -71,8 +71,84 @@ Using the map, we draw the borders of V1
 
 ## Measurement, V1 Size
 
+### Drawing an ROI
+1) We first load an inflated brain in Suma (anatomical)
+    -suma -i_fs lh.inflated (or rh)
+2) In suma, we load a functional dataset onto the inflated brain.
+    -ctrl+s -> load dataset
+    e.g., analysis-eva/sub-*/pa_from_pRF_paecc_bars_bars_lh.gii
+    or retmaps/pa_from_pRF_paecc_bars_bars_lh.gii
+    
+    Unselect "sym" (symmetrically modifying the threshold)
+    Change threshold to something sensible (between 20-160)
+    Press * to smooth (e.g. 2)
+3) We start drawing after doing the above steps.
+    -ctrl+d opens the drawing box
+    shift+arrow moves the brain
+
+    -select the pen
+    -draw around the blob
+    -click "Join"
+    -Left mouse click on the blob
+    -Change niml to 1D
+    Save ROI
+
+Now we have a V1 drawn using the functional data.
+File name: sub-**_lh_v1.1D.roi
+File name: sub-**_rh_v1.1D.roi
 
 
+
+### Measurement 
+We need a few AFNI commands for measurement.
+
+Main ones will be:
+    -ROI2dataset
+    -SurfInfo
+    -SurfMeasures
+
+We first convert the ROI to a dataset that covers the whole brain surface with
+ROI2dataset command.
+
+We will need certain files that are output from the scans for this operation:
+    -sub-**_lh.spec (or rh)
+    -lh.inflated.gii (or rh)
+    -sub-**_lh_v1.1D.roi (or rh)
+
+In order to do the conversion, we need to obtain the total number of nodes on
+the full hemisphere surface 
+
+We do so with this command:
+
+    -SurfInfo -N_Node -spec sub-**_lh.spec -surf_A lh.inflated.gii
+
+This gives us an N_Node. We take N_Node minus 1 (N_node-1) and put it in this
+command:
+
+ROI2dataset -prefix testroi(this name can be changed) -pad_to_node
+N_Node-1 -input sub-**_lh_v1.1D.roi
+
+Now we have a converted dataset file which can be used by SurfMeasures command
+
+SurfMeasures gives us the measurement.
+This command requires following files in the same folder:
+    -sub-**_lh.spec (or rh.spec)
+    -lh.smoothwm.gii (or rh.smoothwm.gii)
+    -lh.aparc.a2009s.annot.niml.dset (or rh)
+    -the converted dset file from the previous step (e.g., testroi.niml.dset)
+
+Finally, with these files, we can now run the following command:
+
+SurfMeasures -info_area -func n_area_A sub-**_lh.spec -surf_A lh.smoothwm.gii
+-cmask '-a testroi.niml.dset -expr step(a)' -out testsm.niml.dset | grep total
+| sed 's/-- total area 0 = /sub-**: lh: /' >> out_file.txt
+
+the name of the output file can be changed (-out filename.niml.dset)
+and the output of the surface area is shown in the command line when you run
+this command
+
+This operation can also be looped through all your participants for hassle-free
+processing. For that, see [this file.](https://github.com/dafrius/v1_size_measurement/blob/main/measure_loop.sh)
 
 
 
