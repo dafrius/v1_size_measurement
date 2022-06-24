@@ -7,7 +7,7 @@
 - Faces, hands, string instruments to localize FFA
 
 ## Data acquisition
-- in the document, umut_v1_size_methods.docx
+- Details in [this document.](https://github.com/dafrius/v1_size_measurement/blob/main/umut_v1_size_methods.docx)
 
 ## Preprocessing
 ### Anatomical
