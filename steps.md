@@ -55,14 +55,13 @@ press a button.
 
 
 Size of the wedge, width, etc..
-*Pull the code from lab-github into this folder.
+
+[Details here](https://github.com/Goffaux-Lab/psychopy-retinotopy)
 
 ## PRF Model Fitting
 1) De-trending for fixing the slow-drift
 
-In the repository called matlab/fmri library
-
-*Pull the code from lab-github into this folder.
+[Here](https://github.com/Goffaux-Lab/matlab-fmri-libraries/blob/master/makePRFmodels.m)
 
 Output is the volume map
 Looking at the best pRF model, tells how eccentric that voxel was, etc..
