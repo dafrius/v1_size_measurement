@@ -1,14 +1,14 @@
 # Methods
 
 ## Subjects
-Eighteen healthy subjects (age 25.1 ± 3.28, 5 males) completed three scanning
-sessions. Two subjects were excluded from data analysis: one due to
+**X** healthy subjects (age **X** ± **X**, **X** males) completed three scanning
+sessions. **X** subjects were excluded from data analysis: one due to
 inattentiveness and motion in the scanner, the second due to wrong scanner
 settings. Before scanning, we tested the acuity of the subjects with the
 Freiburg Visual Acuity and Contrast Test (FrACT), which revealed all subjects
-had normal or corrected-to-normal vision (LogMar mean = -0.01 ± 0.11, decVA =
-1.08 ± 0.39). All subjects reported being right-handed as measured with the
-Edinburgh handedness Questionnaire (82.9±17.3; Oldfield, 1971).
+had normal or corrected-to-normal vision (LogMar mean = **X** ± **X** decVA =
+**X** ± **X**). All subjects reported being right-handed as measured with the
+Edinburgh handedness Questionnaire (**X** ± **X**; Oldfield, 1971).
 
 ## Stimuli
 Each subject performed the main experiment as well as a functional localiser to
