@@ -1,8 +1,13 @@
 # Methods
+The MRI data used for **X** of the subjects in this project comes from a
+different project which involved a total of 20 experimental runs divided over 3
+scanning sessions. Thereafter identical retinotopy and localiser scans were
+collected in a single session on a further **X** subjects. Below we omit the
+details of the unused runs collected in the original project. 
 
 ## Subjects
-**X** healthy subjects (age **X** ± **X**, **X** males) completed three scanning
-sessions. **X** subjects were excluded from data analysis: one due to
+**X** healthy subjects (age **X** ± **X**, **X** males) completed three
+scanning sessions. **X** subjects were excluded from data analysis: one due to
 inattentiveness and motion in the scanner, the second due to wrong scanner
 settings. Before scanning, we tested the acuity of the subjects with the
 Freiburg Visual Acuity and Contrast Test (FrACT), which revealed all subjects
