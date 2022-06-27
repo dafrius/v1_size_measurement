@@ -135,6 +135,15 @@ V1 Delineation
 From schwarzkopf paper, see supplementary *materials and methods*
 
 
+The boundaries of the visual regions were delineated manually by mapping mirror
+reversals in the phase map, which correspond to the representation of the
+vertical and horizontal meridians. The inner and outer boundaries of the
+regions of interest were defined by mapping the extent of significant **p<0.05,
+uncorrected) THIS WILL BE UPDATED** visual responses in the polar map. The
+eccentricity map was used to confirm that these edges corresponded to the
+locaions where the eccentricity values wrapped around. The surface area of each
+region was then determined by the SurfMeasures command provided by AFNI
+(Analysis of Functional NeuroImages).
 
 The regions of interest (ROIs) in EVC were delineated based on retinotopy
 **!!!** The FFA, responding preferentially to faces, was identified
