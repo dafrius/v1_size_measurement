@@ -159,4 +159,30 @@ preferring clusters. Overall, there were more face-selective voxels in the
 right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
 
 ## Measurement of pRFs
+We created predicted timecourse's of **X** 2D Gaussian pRF models, each model
+was centered at a grid location (with a spacing of 0.2 degrees of visual angle)
+and excluding those locations falling outside the circular stimulation area. At
+each grid location, we included 4 models with sigmas of either 0.05, 0.3, 0.65
+and 0.95 visual degrees in line with the range of V1 sigma values found by
+Dumoulin and Wandell (2008). Predicted timecourses were formed by convolving a
+neural timeseries with a (double gamma) haemodynamic response function. The
+neural timeseries was in an identical way to Dumoulin and Wandell (2008).
+
+Before fitting, the data were spatially smoothed using matlab's `smooth3`
+function with a gaussian kernal size of 3x3x3 voxels. For each voxel, the mean
+of each run was removed and the data concatenated in the time dimension before
+being detrended using matlab's `detrend` function with an 8th degree
+polynomial. For every voxel in the posterior lobe, we computed the correlation
+between the observed timecourse and each of the predicted timecourse. The
+winning model was simply the one with the highest correlation. While more
+sophisticated parameter selection methods exist, we are confident that any
+overfitting would not impact on the large-scale organisation of the retinotopic
+maps produced from these model fits. Indeed, we observed a high level of
+agreement between the borders of V1/V2 as suggested by the functional maps and
+the V1/V2 border of the *Freesurfer* atlas labels fitted based on surface
+curvature.
+
+## References
+Dumoulin, S. O., & Wandell, B. A. (2008). Population receptive field estimates
+in human visual cortex. Neuroimage, 39(2), 647-660.
 
