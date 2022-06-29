@@ -137,7 +137,7 @@ phase map, which correspond to the representation of the vertical and
 horizontal meridians. The portion of V1 representing up to 10 visual degrees
 (i.e. the full extent of the retinotopic stimulation) was defined by the band
 of maximal eccentricity values, which was confirmed to follow the drop off of
-model $$r^2$$ (indicating poor model fits where cortex was too eccentric to be
+model $r^2$ (indicating poor model fits where cortex was too eccentric to be
 stimulated by the retinotopy sequence). The surface area of the defined V1
 region was then determined by the SurfMeasures command provided by AFNI
 (Analysis of Functional NeuroImages).
