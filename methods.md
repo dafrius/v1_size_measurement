@@ -1,14 +1,14 @@
 # Methods
-The MRI data used for **X** of the subjects in this project comes from a
+The MRI data used for nine of the subjects in this project comes from a
 different project which involved a total of 20 experimental runs divided over 3
 scanning sessions. The first session included a T1-weighted anatomical scan and
 the second session a functional face localising run. Thereafter identical
-retinotopy and localiser scans were collected in a single session on a further
-**X** subjects. Below we omit the details of the unused runs collected in the
+retinotopy and localiser scans were collected in a single session on further
+four subjects. Below we omit the details of the unused runs collected in the
 original project. 
 
 ## Subjects
-**X** healthy subjects (age **X** ± **X**, **X** males) completed three
+13 healthy subjects (age **X** ± **X**, four males) completed three
 scanning sessions. **X** subjects were excluded from data analysis: one due to
 inattentiveness and motion in the scanner, the second due to wrong scanner
 settings. Before scanning, we tested the acuity of the subjects with the
@@ -17,7 +17,7 @@ had normal or corrected-to-normal vision (LogMar mean = **X** ± **X** decVA =
 **X** ± **X**). All subjects reported being right-handed as measured with the
 Edinburgh handedness Questionnaire (**X** ± **X**; Oldfield, 1971).
 
-## Stimuli
+## Stimuli +
 Each subject performed the main experiment as well as a functional localiser to
 delineate the face-specialised voxels in the ventral pathway at the individual
 level. For both the localiser and main experiment, the stimuli were presented
@@ -30,7 +30,7 @@ experiment and the functional localiser had a block design.
 
 ### Retinotopic localiser
 
-### Functional localiser
+### Functional localiser +
 Stimuli for the localiser experiment consisted of three image categories
 (faces, hands, instruments) each containing 20 greyscale images (See
 supplementary; Stigliani, Weiner, & Grill-Spector, 2015) along with their
@@ -46,7 +46,7 @@ times.
 
 ### Retinotopic localiser
 
-### Functional localiser
+### Functional localiser +
 The functional localiser run had a block design, of 10-second blocks,
 alternated by 10 seconds of fixation with a 12-second fixation period at the
 beginning and end of the run.  To ensure subjects paid attention during
@@ -133,18 +133,18 @@ using a Gaussian kernel of FWHM 5mm. And high-pass temporal filtering was
 carried out using a Gaussian-weighted least-squares straight-line fitting
 (sigma=50.0s).
 
-## Regions of interest
+## Regions of interest +
 
-Similar to Schwarzkopf **(YEAR?)**, the V1 region of interest was delineated
+Similar to Schwarzkopf et al. (2011) the V1 region of interest was delineated
 manually: The border between V1 and V2 was defined by mirror reversals in the
 phase map, which correspond to the representation of the vertical and
 horizontal meridians. The portion of V1 representing up to 10 visual degrees
 (i.e. the full extent of the retinotopic stimulation) was defined by the band
 of maximal eccentricity values, which was confirmed to follow the drop off of
 model $r^2$ (indicating poor model fits where cortex was too eccentric to be
-stimulated by the retinotopy sequence). The surface area of the defined V1
-region was then determined by the SurfMeasures command provided by AFNI
-(Analysis of Functional NeuroImages).
+stimulated by the retinotopy sequence). The surface area of the defined region
+was then determined by the SurfMeasures command provided by AFNI (Analysis of
+Functional NeuroImages; Cox, 1996).
 
 The FFA, responding preferentially to faces, was identified independently for
 each subject, based on the localiser scan. First, to select the brain regions
