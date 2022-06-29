@@ -1,9 +1,11 @@
 # Methods
 The MRI data used for **X** of the subjects in this project comes from a
 different project which involved a total of 20 experimental runs divided over 3
-scanning sessions. Thereafter identical retinotopy and localiser scans were
-collected in a single session on a further **X** subjects. Below we omit the
-details of the unused runs collected in the original project. 
+scanning sessions. The first session included a T1-weighted anatomical scan and
+the second session a functional face localising run. Thereafter identical
+retinotopy and localiser scans were collected in a single session on a further
+**X** subjects. Below we omit the details of the unused runs collected in the
+original project. 
 
 ## Subjects
 **X** healthy subjects (age **X** ± **X**, **X** males) completed three
@@ -26,6 +28,8 @@ viewing distance of 175cm. Across experiments, all images were attributed a
 mean (i.e., the global luminance) and RMS contrast of 0.45±0.1. Both the main
 experiment and the functional localiser had a block design.
 
+### Retinotopic localiser
+
 ### Functional localiser
 Stimuli for the localiser experiment consisted of three image categories
 (faces, hands, instruments) each containing 20 greyscale images (See
@@ -36,23 +40,23 @@ unfamiliar faces (10 males) of various viewpoints (including hair), isolated
 hands in various poses, and stringed instruments (e.g. guitar, cello, lute,
 etc) positioned in different orientations.
 
-
 ## Procedure
-All subjects participated in 20 experimental runs divided over 3 scanning
-sessions. The first session included a T1-weighted anatomical scan and the
-second session a functional face localising run. All functional runs had a
-block design, of 10-second blocks, alternated by 10 seconds of fixation with a
-12-second fixation period at the beginning and end of the run. 
-To ensure subjects paid attention during functional runs, we instructed them to
-detect a rare and brief colour change of the stimulus by pressing a button with
-the right index finger. In each block, there were two targets: HSV profile 1.0,
-1.0, 0.8. One colour change occurred per block half, but never during the first
-stimulus of a block. A fixation cross, made of two thin black lines that
-connected opposite corners of the square stimuli, was visible throughout all
-runs. Subjects were instructed to fixate on its central intersection at all
+In all functional runs, subjects were instructed to fixate centrally at all
 times.
 
+### Retinotopic localiser
+
 ### Functional localiser
+The functional localiser run had a block design, of 10-second blocks,
+alternated by 10 seconds of fixation with a 12-second fixation period at the
+beginning and end of the run.  To ensure subjects paid attention during
+functional runs, we instructed them to detect a rare and brief colour change of
+the stimulus by pressing a button with the right index finger. In each block,
+there were two targets: HSV profile 1.0, 1.0, 0.8. One colour change occurred
+per block half, but never during the first stimulus of a block. A fixation
+cross, made of two thin black lines that connected opposite corners of the
+square stimuli, was visible throughout all runs.
+
 The functional localiser was used to find voxels responding more to faces than
 non-face objects. Subjects viewed grayscale images of either intact or
 scrambled faces, hands or instruments. Images from all categories were
@@ -154,4 +158,5 @@ threshold for some subjects was set increased to delineate between face
 preferring clusters. Overall, there were more face-selective voxels in the
 right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
 
-## Measurement
+## Measurement of pRFs
+
