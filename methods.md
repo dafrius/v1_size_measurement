@@ -1,9 +1,11 @@
 # Methods
 The MRI data used for **X** of the subjects in this project comes from a
 different project which involved a total of 20 experimental runs divided over 3
-scanning sessions. Thereafter identical retinotopy and localiser scans were
-collected in a single session on a further **X** subjects. Below we omit the
-details of the unused runs collected in the original project. 
+scanning sessions. The first session included a T1-weighted anatomical scan and
+the second session a functional face localising run. Thereafter identical
+retinotopy and localiser scans were collected in a single session on a further
+**X** subjects. Below we omit the details of the unused runs collected in the
+original project. 
 
 ## Subjects
 **X** healthy subjects (age **X** ± **X**, **X** males) completed three
@@ -26,6 +28,8 @@ viewing distance of 175cm. Across experiments, all images were attributed a
 mean (i.e., the global luminance) and RMS contrast of 0.45±0.1. Both the main
 experiment and the functional localiser had a block design.
 
+### Retinotopic localiser
+
 ### Functional localiser
 Stimuli for the localiser experiment consisted of three image categories
 (faces, hands, instruments) each containing 20 greyscale images (See
@@ -36,23 +40,23 @@ unfamiliar faces (10 males) of various viewpoints (including hair), isolated
 hands in various poses, and stringed instruments (e.g. guitar, cello, lute,
 etc) positioned in different orientations.
 
-
 ## Procedure
-All subjects participated in 20 experimental runs divided over 3 scanning
-sessions. The first session included a T1-weighted anatomical scan and the
-second session a functional face localising run. All functional runs had a
-block design, of 10-second blocks, alternated by 10 seconds of fixation with a
-12-second fixation period at the beginning and end of the run. 
-To ensure subjects paid attention during functional runs, we instructed them to
-detect a rare and brief colour change of the stimulus by pressing a button with
-the right index finger. In each block, there were two targets: HSV profile 1.0,
-1.0, 0.8. One colour change occurred per block half, but never during the first
-stimulus of a block. A fixation cross, made of two thin black lines that
-connected opposite corners of the square stimuli, was visible throughout all
-runs. Subjects were instructed to fixate on its central intersection at all
+In all functional runs, subjects were instructed to fixate centrally at all
 times.
 
+### Retinotopic localiser
+
 ### Functional localiser
+The functional localiser run had a block design, of 10-second blocks,
+alternated by 10 seconds of fixation with a 12-second fixation period at the
+beginning and end of the run.  To ensure subjects paid attention during
+functional runs, we instructed them to detect a rare and brief colour change of
+the stimulus by pressing a button with the right index finger. In each block,
+there were two targets: HSV profile 1.0, 1.0, 0.8. One colour change occurred
+per block half, but never during the first stimulus of a block. A fixation
+cross, made of two thin black lines that connected opposite corners of the
+square stimuli, was visible throughout all runs.
+
 The functional localiser was used to find voxels responding more to faces than
 non-face objects. Subjects viewed grayscale images of either intact or
 scrambled faces, hands or instruments. Images from all categories were
@@ -130,34 +134,29 @@ carried out using a Gaussian-weighted least-squares straight-line fitting
 (sigma=50.0s).
 
 ## Regions of interest
-V1 Delineation
 
-From schwarzkopf paper, see supplementary *materials and methods*
-
-
-The boundaries of the visual regions were delineated manually by mapping mirror
-reversals in the phase map, which correspond to the representation of the
-vertical and horizontal meridians. The inner and outer boundaries of the
-regions of interest were defined by mapping the extent of significant **p<0.05,
-uncorrected) THIS WILL BE UPDATED** visual responses in the polar map. The
-eccentricity map was used to confirm that these edges corresponded to the
-locaions where the eccentricity values wrapped around. The surface area of each
+Similar to Schwarzkopf **(YEAR?)**, the V1 region of interest was delineated
+manually: The border between V1 and V2 was defined by mirror reversals in the
+phase map, which correspond to the representation of the vertical and
+horizontal meridians. The portion of V1 representing up to 10 visual degrees
+(i.e. the full extent of the retinotopic stimulation) was defined by the band
+of maximal eccentricity values, which was confirmed to follow the drop off of
+model $r^2$ (indicating poor model fits where cortex was too eccentric to be
+stimulated by the retinotopy sequence). The surface area of the defined V1
 region was then determined by the SurfMeasures command provided by AFNI
 (Analysis of Functional NeuroImages).
 
-The regions of interest (ROIs) in EVC were delineated based on retinotopy
-**!!!** The FFA, responding preferentially to faces, was identified
-independently for each subject, based on the localiser scan. First, to select
-the brain regions more responsive to faces than non-face objects we computed
-the conjunction between [intact faces - intact hands] and [intact faces -
-intact instruments] contrasts. Next, to exclude activity to low-level image
-properties we selected the voxels that showed a significantly larger response
-to intact than scrambled faces [intact face - scrambled face]. Significant
-voxel clusters on t maps were selected at a q[false discovery rate, FDR] <
-0.01. After visual inspection, the threshold for some subjects was set
-increased to delineate between face preferring clusters. Overall, there were
-more face-selective voxels in the right FFA (143±104) compared to the left
-(108±93). 
+The FFA, responding preferentially to faces, was identified independently for
+each subject, based on the localiser scan. First, to select the brain regions
+more responsive to faces than non-face objects we computed the conjunction
+between [intact faces - intact hands] and [intact faces - intact instruments]
+contrasts. Next, to exclude activity to low-level image properties we selected
+the voxels that showed a significantly larger response to intact than scrambled
+faces [intact face - scrambled face]. Significant voxel clusters on t maps were
+selected at a q[false discovery rate, FDR] < 0.01. After visual inspection, the
+threshold for some subjects was set increased to delineate between face
+preferring clusters. Overall, there were more face-selective voxels in the
+right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
 
+## Measurement of pRFs
 
-## Measurement
