@@ -25,7 +25,7 @@ with PsychoPy v3.2.4 on an NNL LCD Monitor (32-inch, 1920 x 1080 pixels, 698.40
 x 392.85 mm, refresh rate = 60 Hz) situated at the end of the scanner bore.
 Subjects viewed the stimuli via a mirror attached to the head-coil, at a
 viewing distance of 175cm.
-=======
+
 ## Procedure
 In all functional runs, subjects were instructed to fixate centrally at all
 times.
