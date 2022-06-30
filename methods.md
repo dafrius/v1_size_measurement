@@ -1,23 +1,23 @@
 # Methods
-The MRI data used for **X** of the subjects in this project comes from a
+The MRI data used for nine of the subjects in this project comes from a
 different project which involved a total of 20 experimental runs divided over 3
 scanning sessions. The first session included a T1-weighted anatomical scan and
 the second session a functional face localising run. Thereafter identical
-retinotopy and localiser scans were collected in a single session on a further
-**X** subjects. Below we omit the details of the unused runs collected in the
+retinotopy and localiser scans were collected in a single session on further
+four subjects. Below we omit the details of the unused runs collected in the
 original project. 
 
 ## Subjects
-**X** healthy subjects (age **X** ± **X**, **X** males) completed three
+13 healthy subjects (age 26.4 ± 3.4, four males) completed three
 scanning sessions. **X** subjects were excluded from data analysis: one due to
 inattentiveness and motion in the scanner, the second due to wrong scanner
 settings. Before scanning, we tested the acuity of the subjects with the
 Freiburg Visual Acuity and Contrast Test (FrACT), which revealed all subjects
-had normal or corrected-to-normal vision (LogMar mean = **X** ± **X** decVA =
-**X** ± **X**). All subjects reported being right-handed as measured with the
+had normal or corrected-to-normal vision (LogMar mean = -.04 ± .14 decVA =
+1.21 ± .34). All subjects reported being right-handed as measured with the
 Edinburgh handedness Questionnaire (**X** ± **X**; Oldfield, 1971).
 
-## Stimuli
+## Stimuli +
 Each subject performed the main experiment as well as a functional localiser to
 delineate the face-specialised voxels in the ventral pathway at the individual
 level. For both the localiser and main experiment, the stimuli were presented
@@ -25,7 +25,7 @@ with PsychoPy v3.2.4 on an NNL LCD Monitor (32-inch, 1920 x 1080 pixels, 698.40
 x 392.85 mm, refresh rate = 60 Hz) situated at the end of the scanner bore.
 Subjects viewed the stimuli via a mirror attached to the head-coil, at a
 viewing distance of 175cm.
-
+=======
 ## Procedure
 In all functional runs, subjects were instructed to fixate centrally at all
 times.
@@ -96,18 +96,18 @@ using a Gaussian kernel of FWHM 5mm. And high-pass temporal filtering was
 carried out using a Gaussian-weighted least-squares straight-line fitting
 (sigma=50.0s).
 
-## Regions of interest
+## Regions of interest +
 
-Similar to Schwarzkopf **(YEAR?)**, the V1 region of interest was delineated
+Similar to Schwarzkopf et al. (2011) the V1 region of interest was delineated
 manually: The border between V1 and V2 was defined by mirror reversals in the
 phase map, which correspond to the representation of the vertical and
 horizontal meridians. The portion of V1 representing up to 10 visual degrees
 (i.e. the full extent of the retinotopic stimulation) was defined by the band
 of maximal eccentricity values, which was confirmed to follow the drop off of
 model $r^2$ (indicating poor model fits where cortex was too eccentric to be
-stimulated by the retinotopy sequence). The surface area of the defined V1
-region was then determined by the SurfMeasures command provided by AFNI
-(Analysis of Functional NeuroImages).
+stimulated by the retinotopy sequence). The surface area of the defined region
+was then determined by the SurfMeasures command provided by AFNI (Analysis of
+Functional NeuroImages; Cox, 1996).
 
 The FFA, responding preferentially to faces, was identified independently for
 each subject, based on the localiser scan. First, to select the brain regions
@@ -122,4 +122,30 @@ preferring clusters. Overall, there were more face-selective voxels in the
 right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
 
 ## Measurement of pRFs
+We created predicted timecourse's of **X** 2D Gaussian pRF models, each model
+was centered at a grid location (with a spacing of 0.2 degrees of visual angle)
+and excluding those locations falling outside the circular stimulation area. At
+each grid location, we included 4 models with sigmas of either 0.05, 0.3, 0.65
+and 0.95 visual degrees in line with the range of V1 sigma values found by
+Dumoulin and Wandell (2008). Predicted timecourses were formed by convolving a
+neural timeseries with a (double gamma) haemodynamic response function. The
+neural timeseries was in an identical way to Dumoulin and Wandell (2008).
+
+Before fitting, the data were spatially smoothed using matlab's `smooth3`
+function with a gaussian kernal size of 3x3x3 voxels. For each voxel, the mean
+of each run was removed and the data concatenated in the time dimension before
+being detrended using matlab's `detrend` function with an 8th degree
+polynomial. For every voxel in the posterior lobe, we computed the correlation
+between the observed timecourse and each of the predicted timecourse. The
+winning model was simply the one with the highest correlation. While more
+sophisticated parameter selection methods exist, we are confident that any
+overfitting would not impact on the large-scale organisation of the retinotopic
+maps produced from these model fits. Indeed, we observed a high level of
+agreement between the borders of V1/V2 as suggested by the functional maps and
+the V1/V2 border of the *Freesurfer* atlas labels fitted based on surface
+curvature.
+
+## References
+Dumoulin, S. O., & Wandell, B. A. (2008). Population receptive field estimates
+in human visual cortex. Neuroimage, 39(2), 647-660.
 
