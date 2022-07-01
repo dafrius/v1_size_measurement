@@ -26,6 +26,15 @@ x 392.85 mm, refresh rate = 60 Hz) situated at the end of the scanner bore.
 Subjects viewed the stimuli via a mirror attached to the head-coil, at a
 viewing distance of 175cm.
 
+### Retinotopy 
+Each subject completed three runs of contrast reversing (4Hz) checkerboards.
+The first run comprised wedges (for polar angle measurement), and eccentricity
+rings simultaneously. Second and third runs consisted of
+sweeping bar stimuli with 20 seconds per sweep, and moving from 8 different
+angles (in both directions).
+
+
+
 ## Procedure
 In all functional runs, subjects were instructed to fixate centrally at all
 times.
