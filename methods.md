@@ -109,18 +109,6 @@ stimulated by the retinotopy sequence). The surface area of the defined region
 was then determined by the SurfMeasures command provided by AFNI (Analysis of
 Functional NeuroImages; Cox, 1996).
 
-The FFA, responding preferentially to faces, was identified independently for
-each subject, based on the localiser scan. First, to select the brain regions
-more responsive to faces than non-face objects we computed the conjunction
-between [intact faces - intact hands] and [intact faces - intact instruments]
-contrasts. Next, to exclude activity to low-level image properties we selected
-the voxels that showed a significantly larger response to intact than scrambled
-faces [intact face - scrambled face]. Significant voxel clusters on t maps were
-selected at a q[false discovery rate, FDR] < 0.01. After visual inspection, the
-threshold for some subjects was set increased to delineate between face
-preferring clusters. Overall, there were more face-selective voxels in the
-right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
-
 ## Measurement of pRFs
 We created predicted timecourse's of **X** 2D Gaussian pRF models, each model
 was centered at a grid location (with a spacing of 0.2 degrees of visual angle)
