@@ -186,3 +186,11 @@ curvature.
 Dumoulin, S. O., & Wandell, B. A. (2008). Population receptive field estimates
 in human visual cortex. Neuroimage, 39(2), 647-660.
 
+Cox, R.W. (1996). AFNI: software for analysis and visualization of functional
+magnetic resonance neuroimages. Comput Biomed Res 29(3):162-173.
+doi:10.1006/cbmr.1996.0014
+
+Schwarzkopf, D.S., Song, C., Rees, G. (2011). The surface area of human V1
+predicts the subjective experience of object size. Nature Neuroscience
+14(1):28-30. doi: 10.1038/nn.2706. Epub 2010 Dec 5.
+
