@@ -8,5 +8,5 @@
   modified accordingly
 - [x] ROI: FFA part should be separated
 - [x] Measurement of pRFs
-- [ ] Add figure showing the retmap stimuli (screenshots can be found in the
+- [x] Add figure showing the retmap stimuli (screenshots can be found in the
   [psychopy repo](https://github.com/Goffaux-Lab/psychopy-retinotopy/tree/master/images)
