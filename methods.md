@@ -50,6 +50,7 @@ of the screen to the other along eight equally spaced radial axes (once in one
 direction, once in the other). The size of the checkerboards in these runs was
 uniform (~0.53°).
 
+
 ## MRI acquisition
 Subjects were scanned in a 3Tesla GE Signa Premier MRI scanner with a 48ch head
 coil, based at Cliniques Universitaires UCL Saint-Luc in Brussels. As
@@ -129,18 +130,6 @@ stimulated by the retinotopy sequence). The surface area of the defined region
 was then determined by the SurfMeasures command provided by AFNI (Analysis of
 Functional NeuroImages; Cox, 1996).
 
-The FFA, responding preferentially to faces, was identified independently for
-each subject, based on the localiser scan. First, to select the brain regions
-more responsive to faces than non-face objects we computed the conjunction
-between [intact faces - intact hands] and [intact faces - intact instruments]
-contrasts. Next, to exclude activity to low-level image properties we selected
-the voxels that showed a significantly larger response to intact than scrambled
-faces [intact face - scrambled face]. Significant voxel clusters on t maps were
-selected at a q[false discovery rate, FDR] < 0.01. After visual inspection, the
-threshold for some subjects was set increased to delineate between face
-preferring clusters. Overall, there were more face-selective voxels in the
-right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
-
 ## Measurement of pRFs
 We created predicted timecourse's of **X** 2D Gaussian pRF models, each model
 was centered at a grid location (with a spacing of 0.2 degrees of visual angle)
@@ -168,4 +157,12 @@ curvature.
 ## References
 Dumoulin, S. O., & Wandell, B. A. (2008). Population receptive field estimates
 in human visual cortex. Neuroimage, 39(2), 647-660.
+
+Cox, R.W. (1996). AFNI: software for analysis and visualization of functional
+magnetic resonance neuroimages. Comput Biomed Res 29(3):162-173.
+doi:10.1006/cbmr.1996.0014
+
+Schwarzkopf, D.S., Song, C., Rees, G. (2011). The surface area of human V1
+predicts the subjective experience of object size. Nature Neuroscience
+14(1):28-30. doi: 10.1038/nn.2706. Epub 2010 Dec 5.
 

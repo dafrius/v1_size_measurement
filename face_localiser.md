@@ -36,3 +36,18 @@ in a random order, all images were repeated three times during the whole
 localiser run. Each image appeared for 500ms, followed by a 500ms interstimulus
 interval. 
 
+## Regions of interest
+
+
+The FFA, responding preferentially to faces, was identified independently for
+each subject, based on the localiser scan. First, to select the brain regions
+more responsive to faces than non-face objects we computed the conjunction
+between [intact faces - intact hands] and [intact faces - intact instruments]
+contrasts. Next, to exclude activity to low-level image properties we selected
+the voxels that showed a significantly larger response to intact than scrambled
+faces [intact face - scrambled face]. Significant voxel clusters on t maps were
+selected at a q[false discovery rate, FDR] < 0.01. After visual inspection, the
+threshold for some subjects was set increased to delineate between face
+preferring clusters. Overall, there were more face-selective voxels in the
+right FFA (**X** ± **X**) compared to the left (**X** ± **X**). 
+
