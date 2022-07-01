@@ -17,7 +17,7 @@ had normal or corrected-to-normal vision (LogMar mean = -.04 ± .14 decVA =
 1.21 ± .34). All subjects reported being right-handed as measured with the
 Edinburgh handedness Questionnaire (**X** ± **X**; Oldfield, 1971).
 
-## Stimuli +
+## Stimulus presentation
 Each subject performed the main experiment as well as a functional localiser to
 delineate the face-specialised voxels in the ventral pathway at the individual
 level. For both the localiser and main experiment, the stimuli were presented
@@ -26,9 +26,29 @@ x 392.85 mm, refresh rate = 60 Hz) situated at the end of the scanner bore.
 Subjects viewed the stimuli via a mirror attached to the head-coil, at a
 viewing distance of 175cm.
 
-## Procedure
-In all functional runs, subjects were instructed to fixate centrally at all
-times.
+## Retinotopic stimuli and procedure
+All functional runs included a 12 second baseline at the beginning and end.
+The retinotopic mapping stimuli were high contrast checkerboard patterns on a
+gray background presented on a screen at the back of the bore and viewed by
+means of a mirror on the headcoil. Stimuli subtended a radius of 6.4° of visual
+angle from fixation and reversed contrast polarity at a temporal frequency of
+~4Hz. In all functional runs, subjects were instructed to fixate at a small red
+central cross at all times. The subjects' task was to indicate with a button
+press when the cross rotated by 45°). To further aid in fixation, the grey
+background included a 'spider-web' pattern.
+
+In the first run (lasting 280 secs) there was a simultaneous presentation of a
+smoothly counter-clockwise rotating wedge (45° width, 6 rotation cycles at a
+frequency of 42.67 secs) and a ring that expanded outward (the outer radius was
+1.5 times the inner radius, 5 expansion cycles at a frequency of 51.333 secs).
+The size of checkerboards for this run logarithmically increased with
+eccentricity.
+
+In the next two runs, (each lasting 344 secs) we presented 16 smoothly sweeping
+bar stimuli (1.6° wide, sweep frequency of 20 secs) which swept from one side
+of the screen to the other along eight equally spaced radial axes (once in one
+direction, once in the other). The size of the checkerboards in these runs was
+uniform (~0.53°).
 
 ## MRI acquisition
 Subjects were scanned in a 3Tesla GE Signa Premier MRI scanner with a 48ch head
