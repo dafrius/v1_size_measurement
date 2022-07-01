@@ -1,10 +1,12 @@
 - [ ] Subject Age, FrACT, Edinburgh Handedness Inventory, etc.
 - [ ] Excluded subjects? None, I guess
-- [ ] Stimuli section -> face-specialised voxels, etc. should be separated
+- [x] Stimuli section -> face-specialised voxels, etc. should be separated
 - [ ] Stimuli/Retinotopic localiser, details need to be added (from Jolien's stuff)
-- [ ] Stimuli/Functional Localiser -> face related stuff should be separated
-- [ ] Procedure/Retinotopic localiser, details need to be added
-- [ ] Functional data pre-processing: "across all tasks and sessions" should be
+- [x] Stimuli/Functional Localiser -> face related stuff should be separated
+- [x] Procedure/Retinotopic localiser, details need to be added
+- [x] Functional data pre-processing: "across all tasks and sessions" should be
   modified accordingly
-- [ ] ROI: FFA part should be separated
-- [ ] Measurement of pRFs - ?
+- [x] ROI: FFA part should be separated
+- [x] Measurement of pRFs
+- [ ] Add figure showing the retmap stimuli (screenshots can be found in the
+  [psychopy repo](https://github.com/Goffaux-Lab/psychopy-retinotopy/tree/master/images)
