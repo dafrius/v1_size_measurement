@@ -46,12 +46,14 @@ eccentricity.
 
 ![pa_ecc](https://github.com/Goffaux-Lab/psychopy-retinotopy/blob/master/images/pa_ecc_ex.png
 )
+
 In the next two runs, (each lasting 344 secs) we presented 16 smoothly sweeping
 bar stimuli (1.6° wide, sweep frequency of 20 secs) which swept from one side
 of the screen to the other along eight equally spaced radial axes (once in one
 direction, once in the other). The size of the checkerboards in these runs was
 uniform (~0.53°).
 
+![bar_ex](https://github.com/Goffaux-Lab/psychopy-retinotopy/blob/master/images/bar_ex.png)
 
 ## MRI acquisition
 Subjects were scanned in a 3Tesla GE Signa Premier MRI scanner with a 48ch head
