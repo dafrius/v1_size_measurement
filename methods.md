@@ -43,6 +43,9 @@ frequency of 42.67 secs) and a ring that expanded outward (the outer radius was
 The size of checkerboards for this run logarithmically increased with
 eccentricity.
 
+
+![pa_ecc](https://github.com/Goffaux-Lab/psychopy-retinotopy/tree/master/images/pa_ecc_ex.png)
+
 In the next two runs, (each lasting 344 secs) we presented 16 smoothly sweeping
 bar stimuli (1.6° wide, sweep frequency of 20 secs) which swept from one side
 of the screen to the other along eight equally spaced radial axes (once in one
