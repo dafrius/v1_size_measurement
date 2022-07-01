@@ -24,48 +24,11 @@ level. For both the localiser and main experiment, the stimuli were presented
 with PsychoPy v3.2.4 on an NNL LCD Monitor (32-inch, 1920 x 1080 pixels, 698.40
 x 392.85 mm, refresh rate = 60 Hz) situated at the end of the scanner bore.
 Subjects viewed the stimuli via a mirror attached to the head-coil, at a
-viewing distance of 175cm. Across experiments, all images were attributed a
-mean (i.e., the global luminance) and RMS contrast of 0.45±0.1. Both the main
-experiment and the functional localiser had a block design.
-
-### Retinotopic localiser
-
-### Functional localiser +
-Stimuli for the localiser experiment consisted of three image categories
-(faces, hands, instruments) each containing 20 greyscale images (See
-supplementary; Stigliani, Weiner, & Grill-Spector, 2015) along with their
-phase-scrambled counterparts. The stimuli were superimposed onto the Fourier
-phase-scrambled backgrounds (procedure as described above) and consisted of
-unfamiliar faces (10 males) of various viewpoints (including hair), isolated
-hands in various poses, and stringed instruments (e.g. guitar, cello, lute,
-etc) positioned in different orientations.
+viewing distance of 175cm.
 
 ## Procedure
 In all functional runs, subjects were instructed to fixate centrally at all
 times.
-
-### Retinotopic localiser
-
-### Functional localiser +
-The functional localiser run had a block design, of 10-second blocks,
-alternated by 10 seconds of fixation with a 12-second fixation period at the
-beginning and end of the run.  To ensure subjects paid attention during
-functional runs, we instructed them to detect a rare and brief colour change of
-the stimulus by pressing a button with the right index finger. In each block,
-there were two targets: HSV profile 1.0, 1.0, 0.8. One colour change occurred
-per block half, but never during the first stimulus of a block. A fixation
-cross, made of two thin black lines that connected opposite corners of the
-square stimuli, was visible throughout all runs.
-
-The functional localiser was used to find voxels responding more to faces than
-non-face objects. Subjects viewed grayscale images of either intact or
-scrambled faces, hands or instruments. Images from all categories were
-presented in 36 blocks in total (one image category per block), with 6 blocks
-per condition. A condition was never repeated twice in a row and the order of
-conditions was counterbalanced across subjects. A block consisted of 10 images
-in a random order, all images were repeated three times during the whole
-localiser run. Each image appeared for 500ms, followed by a 500ms interstimulus
-interval. 
 
 ## MRI acquisition
 Subjects were scanned in a 3Tesla GE Signa Premier MRI scanner with a 48ch head
@@ -99,7 +62,7 @@ reconcile ANTs-derived and FreeSurfer-derived segmentations of the cortical
 grey-matter of Mindboggle (Klein et al., 2017).
 
 ### Functional data pre-processing 
-For each of the 24 functional runs per subject (across all tasks and sessions),
+For each of the functional runs per subject (across all tasks and sessions),
 the following pre-processing was performed. First, to generate a functional
 reference, volumes with substantial T1w contrast derived from nonsteady states
 of the scanner (volumes at the beginning of EPI sequence) were identified,
@@ -107,7 +70,7 @@ realigned, and averaged. After skull-stripping of the functional reference
 volume, head motion parameters with respect to the functional reference
 (transformation matrices, and six corresponding rotation and translation
 parameters) were estimated (Jenkinson, Bannister, Brady, & Smith, 2002; mcflirt
-- FSL 5.0.9). On average, the maximum movement was 1.7±0.32mm.
+- FSL 5.0.9). On average, the maximum movement was **X** ± **X** mm.
 
 After correcting for slice timing (Cox & Hyde, 1997; 3dTshift from AFNI
 20160207), the functional reference was co-registered to the T1w reference
