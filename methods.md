@@ -1,3 +1,13 @@
+---
+output: 
+    html_document:
+        keep_md: true
+---
+
+
+
+
+
 # Methods
 The MRI data used for nine of the subjects in this project comes from a
 different project which involved a total of 20 experimental runs divided over 3
@@ -8,13 +18,13 @@ four subjects. Below we omit the details of the unused runs collected in the
 original project. 
 
 ## Subjects
-13 healthy subjects (age 26.4 ± 3.4, four males) completed three
+**X** healthy subjects (age **X** ± **X**, **X** males) completed three
 scanning sessions. **X** subjects were excluded from data analysis. Before
 scanning, we tested the acuity of the subjects with the Freiburg Visual Acuity
 and Contrast Test (FrACT), which revealed all subjects had normal or
-corrected-to-normal vision (LogMar mean = -.04 ± .14 decVA = 1.21 ± .34). All
-subjects reported being right-handed as measured with the Edinburgh handedness
-Questionnaire (**X** ± **X**; Oldfield, 1971).
+corrected-to-normal vision (LogMar mean = **X** ± **X** decVA = **X** ± **X**).
+All subjects reported being right-handed as measured with the Edinburgh
+handedness Questionnaire (**X** ± **X**; Oldfield, 1971).
 
 ## Stimulus presentation
 Each subject performed the main experiment as well as a functional localiser to
@@ -43,17 +53,15 @@ frequency of 42.67 secs) and a ring that expanded outward (the outer radius was
 The size of checkerboards for this run logarithmically increased with
 eccentricity.
 
-
-![pa_ecc](https://github.com/Goffaux-Lab/psychopy-retinotopy/blob/master/images/pa_ecc_ex.png
-)
+![](https://raw.githubusercontent.com/Goffaux-Lab/psychopy-retinotopy/master/images/pa_ecc_ex.png)
 
 In the next two runs, (each lasting 344 secs) we presented 16 smoothly sweeping
 bar stimuli (1.6° wide, sweep frequency of 20 secs) which swept from one side
 of the screen to the other along eight equally spaced radial axes (once in one
 direction, once in the other). The size of the checkerboards in these runs was
 uniform (~0.53°).
-
-![bar_ex](https://github.com/Goffaux-Lab/psychopy-retinotopy/blob/master/images/bar_ex.png)
+                                 
+![](https://raw.githubusercontent.com/Goffaux-Lab/psychopy-retinotopy/master/images/bar_ex.png)
 
 ## MRI acquisition
 Subjects were scanned in a 3Tesla GE Signa Premier MRI scanner with a 48ch head
@@ -95,7 +103,9 @@ realigned, and averaged. After skull-stripping of the functional reference
 volume, head motion parameters with respect to the functional reference
 (transformation matrices, and six corresponding rotation and translation
 parameters) were estimated (Jenkinson, Bannister, Brady, & Smith, 2002; mcflirt
-- FSL 5.0.9). On average, the maximum movement was 1.38 ± 0.21 mm.
+- FSL 5.0.9). On average, the maximum movement was 1.36 ±
+0.21 mm.
+
 
 After correcting for slice timing (Cox & Hyde, 1997; 3dTshift from AFNI
 20160207), the functional reference was co-registered to the T1w reference
