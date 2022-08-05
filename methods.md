@@ -95,7 +95,7 @@ realigned, and averaged. After skull-stripping of the functional reference
 volume, head motion parameters with respect to the functional reference
 (transformation matrices, and six corresponding rotation and translation
 parameters) were estimated (Jenkinson, Bannister, Brady, & Smith, 2002; mcflirt
-- FSL 5.0.9). On average, the maximum movement was **X** ± **X** mm.
+- FSL 5.0.9). On average, the maximum movement was 1.38 ± 0.21 mm.
 
 After correcting for slice timing (Cox & Hyde, 1997; 3dTshift from AFNI
 20160207), the functional reference was co-registered to the T1w reference
