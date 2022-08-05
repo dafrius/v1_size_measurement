@@ -1,3 +1,7 @@
+## Links
+[Schwarzkopf 2011](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012031/)
+[Schwarzkopf 2011 supplemental](https://static-content.springer.com/esm/art%3A10.1038%2Fnn.2706/MediaObjects/41593_2011_BFnn2706_MOESM19_ESM.pdf)
+
 ## Stimuli
 ### Localizer
 - Faces, hands, string instruments to localize FFA
