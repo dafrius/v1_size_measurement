@@ -121,19 +121,6 @@ using a Gaussian kernel of FWHM 5mm. And high-pass temporal filtering was
 carried out using a Gaussian-weighted least-squares straight-line fitting
 (sigma=50.0s).
 
-## Regions of interest 
-
-Similar to Schwarzkopf et al. (2011) the V1 region of interest was delineated
-manually: The border between V1 and V2 was defined by mirror reversals in the
-phase map, which correspond to the representation of the vertical and
-horizontal meridians. The portion of V1 representing up to 10 visual degrees
-(i.e. the full extent of the retinotopic stimulation) was defined by the band
-of maximal eccentricity values, which was confirmed to follow the drop off of
-model $r^2$ (indicating poor model fits where cortex was too eccentric to be
-stimulated by the retinotopy sequence). The surface area of the defined region
-was then determined by the SurfMeasures command provided by AFNI (Analysis of
-Functional NeuroImages; Cox, 1996).
-
 ## Measurement of pRFs
 We created predicted timecourse's of **X** 2D Gaussian pRF models, each model
 was centered at a grid location (with a spacing of 0.2 degrees of visual angle)
@@ -142,7 +129,8 @@ each grid location, we included 4 models with sigmas of either 0.05, 0.3, 0.65
 and 0.95 visual degrees in line with the range of V1 sigma values found by
 Dumoulin and Wandell (2008). Predicted timecourses were formed by convolving a
 neural timeseries with a (double gamma) haemodynamic response function. The
-neural timeseries was in an identical way to Dumoulin and Wandell (2008).
+neural timeseries were formed following an identical procedure to Dumoulin and
+Wandell (2008).
 
 Before fitting, the data were spatially smoothed using matlab's `smooth3`
 function with a gaussian kernal size of 3x3x3 voxels. For each voxel, the mean
@@ -157,6 +145,19 @@ maps produced from these model fits. Indeed, we observed a high level of
 agreement between the borders of V1/V2 as suggested by the functional maps and
 the V1/V2 border of the *Freesurfer* atlas labels fitted based on surface
 curvature.
+
+## Regions of interest 
+
+Similar to Schwarzkopf et al. (2011) the V1 region of interest was delineated
+manually: The border between V1 and V2 was defined by mirror reversals in the
+phase map, which correspond to the representation of the vertical and
+horizontal meridians. The portion of V1 representing up to 10 visual degrees
+(i.e. the full extent of the retinotopic stimulation) was defined by the band
+of maximal eccentricity values, which was confirmed to follow the drop off of
+model $r^2$ (indicating poor model fits where cortex was too eccentric to be
+stimulated by the retinotopy sequence). The surface area of the defined region
+was then determined by the SurfMeasures command provided by AFNI (Analysis of
+Functional NeuroImages; Cox, 1996).
 
 ## References
 Dumoulin, S. O., & Wandell, B. A. (2008). Population receptive field estimates
