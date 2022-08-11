@@ -14,7 +14,7 @@ knitr::knit_hooks$set(inline = function(x) {
 ```{r,  include=FALSE}
 library(tidyverse)
 
-exclude_subs <- c()
+exclude_subs <- c("sub-11", "sub-29")
 
 df <- tribble(
 ~sub,    ~ecc,  ~bars1,  ~bars2,  ~funcloc, ~max_motion,
@@ -66,11 +66,13 @@ All subjects reported being right-handed as measured with the Edinburgh
 handedness Questionnaire (**X** ± **X**; Oldfield, 1971).
 
 ## Stimulus presentation
-The stimuli were presented with PsychoPy v3.2.4 on an NNL LCD Monitor (32-inch,
-1920 x 1080 pixels, 698.40 x 392.85 mm, refresh rate = 60 Hz) situated at the
-end of the scanner bore. Subjects viewed the stimuli via a mirror attached to
-the head-coil, at a viewing distance of 175cm. 
-
+Each subject performed the main experiment as well as a functional localiser to
+delineate the face-specialised voxels in the ventral pathway at the individual
+level. For both the localiser and main experiment, the stimuli were presented
+with PsychoPy v3.2.4 on an NNL LCD Monitor (32-inch, 1920 x 1080 pixels, 698.40
+x 392.85 mm, refresh rate = 60 Hz) situated at the end of the scanner bore.
+Subjects viewed the stimuli via a mirror attached to the head-coil, at a
+viewing distance of 175cm.
 
 ## Retinotopic stimuli and procedure
 All functional runs included a 12 second baseline at the beginning and end.
@@ -142,6 +144,7 @@ volume, head motion parameters with respect to the functional reference
 parameters) were estimated (Jenkinson, Bannister, Brady, & Smith, 2002; mcflirt
 - FSL 5.0.9). On average, the maximum movement was `r motion$mean_motion` ±
 `r motion$sd_motion` mm.
+
 
 After correcting for slice timing (Cox & Hyde, 1997; 3dTshift from AFNI
 20160207), the functional reference was co-registered to the T1w reference
