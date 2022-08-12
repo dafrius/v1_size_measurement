@@ -11,13 +11,13 @@ the unused runs collected in the original project.
 
 ## Subjects
 
-23.00 healthy subjects (age 26.57 ± 3.86, 9.00 males) completed three
-scanning sessions. Before scanning, we tested the acuity of the subjects
-with the Freiburg Visual Acuity and Contrast Test (FrACT), which
-revealed all subjects had normal or corrected-to-normal vision (LogMar =
--0.10 ± 0.12 decVA = 1.33 ± 0.33). All subjects but one reported being
-right-handed as measured with the Edinburgh handedness Questionnaire
-(84.61 ± 39.62; Oldfield, 1971).
+23 healthy subjects (age 26.57 ± 3.86, 9 males) completed three scanning
+sessions. Before scanning, we tested the acuity of the subjects with the
+Freiburg Visual Acuity and Contrast Test (FrACT), which revealed all
+subjects had normal or corrected-to-normal vision (LogMar = -0.1 ± 0.12
+decVA = 1.33 ± 0.33). All subjects but one reported being right-handed
+as measured with the Edinburgh handedness Questionnaire (84.61 ± 39.62;
+Oldfield, 1971).
 
 ## Stimulus presentation
 

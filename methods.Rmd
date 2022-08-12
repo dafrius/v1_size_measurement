@@ -6,7 +6,7 @@ output: github_document
 # limit inline numbers to 2 decimal places
 # register an inline hook:
 knitr::knit_hooks$set(inline = function(x) {
-  x <- sprintf("%1.2f", x)
+  x <- round(x, 2)
   paste(x, collapse = ", ")
 })
 ```
