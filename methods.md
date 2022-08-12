@@ -11,25 +11,20 @@ the unused runs collected in the original project.
 
 ## Subjects
 
-**X** healthy subjects (age **X** ± **X**, **X** males) completed three
-scanning sessions. **X** subjects were excluded from data analysis.
-Before scanning, we tested the acuity of the subjects with the Freiburg
-Visual Acuity and Contrast Test (FrACT), which revealed all subjects had
-normal or corrected-to-normal vision (LogMar mean = **X** ± **X** decVA
-= **X** ± **X**). All subjects reported being right-handed as measured
-with the Edinburgh handedness Questionnaire (**X** ± **X**; Oldfield,
-1971).
+23.00 healthy subjects (age 26.57 ± 3.86, 9.00 males) completed three
+scanning sessions. Before scanning, we tested the acuity of the subjects
+with the Freiburg Visual Acuity and Contrast Test (FrACT), which
+revealed all subjects had normal or corrected-to-normal vision (LogMar =
+-0.10 ± 0.12 decVA = 1.33 ± 0.33). All subjects but one reported being
+right-handed as measured with the Edinburgh handedness Questionnaire
+(84.61 ± 39.62; Oldfield, 1971).
 
 ## Stimulus presentation
 
-Each subject performed the main experiment as well as a functional
-localiser to delineate the face-specialised voxels in the ventral
-pathway at the individual level. For both the localiser and main
-experiment, the stimuli were presented with PsychoPy v3.2.4 on an NNL
-LCD Monitor (32-inch, 1920 x 1080 pixels, 698.40 x 392.85 mm, refresh
-rate = 60 Hz) situated at the end of the scanner bore. Subjects viewed
-the stimuli via a mirror attached to the head-coil, at a viewing
-distance of 175cm.
+The stimuli were presented with PsychoPy v3.2.4 on an NNL LCD Monitor
+(32-inch, 1920 x 1080 pixels, 698.40 x 392.85 mm, refresh rate = 60 Hz)
+situated at the end of the scanner bore. Subjects viewed the stimuli via
+a mirror attached to the head-coil, at a viewing distance of 175cm. 
 
 ## Retinotopic stimuli and procedure
 
@@ -38,7 +33,7 @@ end. The retinotopic mapping stimuli were high contrast checkerboard
 patterns on a gray background presented on a screen at the back of the
 bore and viewed by means of a mirror on the headcoil. Stimuli subtended
 a radius of 6.4° of visual angle from fixation and reversed contrast
-polarity at a temporal frequency of \~4Hz. In all functional runs,
+polarity at a temporal frequency of ~4Hz. In all functional runs,
 subjects were instructed to fixate at a small red central cross at all
 times. The subjects’ task was to indicate with a button press when the
 cross rotated by 45°). To further aid in fixation, the grey background
@@ -49,7 +44,8 @@ presentation of a smoothly counter-clockwise rotating wedge (45° width,
 6 rotation cycles at a frequency of 42.67 secs) and a ring that expanded
 outward (the outer radius was 1.5 times the inner radius, 5 expansion
 cycles at a frequency of 51.333 secs). The size of checkerboards for
-this run logarithmically increased with eccentricity.
+this run logarithmically increased with
+eccentricity.
 
 ![](https://raw.githubusercontent.com/Goffaux-Lab/psychopy-retinotopy/master/images/pa_ecc_ex.png)
 
@@ -57,7 +53,8 @@ In the next two runs, (each lasting 344 secs) we presented 16 smoothly
 sweeping bar stimuli (1.6° wide, sweep frequency of 20 secs) which swept
 from one side of the screen to the other along eight equally spaced
 radial axes (once in one direction, once in the other). The size of the
-checkerboards in these runs was uniform (\~0.53°).
+checkerboards in these runs was uniform
+(~0.53°).
 
 ![](https://raw.githubusercontent.com/Goffaux-Lab/psychopy-retinotopy/master/images/bar_ex.png)
 
@@ -109,7 +106,7 @@ skull-stripping of the functional reference volume, head motion
 parameters with respect to the functional reference (transformation
 matrices, and six corresponding rotation and translation parameters)
 were estimated (Jenkinson, Bannister, Brady, & Smith, 2002; mcflirt -
-FSL 5.0.9). On average, the maximum movement was 1.36 ± 0.21 mm.
+FSL 5.0.9). On average, the maximum movement was 1.38 ± 0.21 mm.
 
 After correcting for slice timing (Cox & Hyde, 1997; 3dTshift from AFNI
 20160207), the functional reference was co-registered to the T1w
@@ -167,18 +164,17 @@ curvature.
 
 ## Regions of interest
 
-Similar to Schwarzkopf et al. (2011) the V1 region of interest was
+Similar to Schwarzkopf et al. (2011) the V1 region of interest was
 delineated manually: The border between V1 and V2 was defined by mirror
 reversals in the phase map, which correspond to the representation of
 the vertical and horizontal meridians. The portion of V1 representing up
 to 10 visual degrees (i.e. the full extent of the retinotopic
 stimulation) was defined by the band of maximal eccentricity values,
-which was confirmed to follow the drop off of model
-![r^2](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;r%5E2 "r^2")
-(indicating poor model fits where cortex was too eccentric to be
-stimulated by the retinotopy sequence). The surface area of the defined
-region was then determined by the SurfMeasures command provided by AFNI
-(Analysis of Functional NeuroImages; Cox, 1996).
+which was confirmed to follow the drop off of model \(r^2\) (indicating
+poor model fits where cortex was too eccentric to be stimulated by the
+retinotopy sequence). The surface area of the defined region was then
+determined by the SurfMeasures command provided by AFNI (Analysis of
+Functional NeuroImages; Cox, 1996).
 
 ## References
 
